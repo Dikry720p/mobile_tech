@@ -1,29 +1,49 @@
 import 'package:flutter/material.dart';
 
-class Page1 extends StatelessWidget {
+class Page4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('contoh ROW :'),
+        title: Text('Data Mahasiswa'),
       ),
-      body: const Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          Text('NAMA'),
-          Text('NIM'),
-          Text('KELAS'),
-          Text('PRODI'),
-        ],
+      body: Center(
+        child: Container(
+          padding: EdgeInsets.all(2.0),
+          margin: EdgeInsets.all(2.0),
+          decoration: BoxDecoration(
+            border: Border.all(),
+            borderRadius: BorderRadius.circular(10.0),
+          ),
+          child: SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: DataTable(
+              columns: const [
+                DataColumn(label: Text('Nama')),
+                DataColumn(label: Text('NIM')),
+                DataColumn(label: Text('Kelas')),
+              ],
+              rows: const [
+                DataRow(cells: [
+                  DataCell(Text('Abdul Diki')),
+                  DataCell(Text('12345678')),
+                  DataCell(Text('A3')),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text('Dikry Nurahaman')),
+                  DataCell(Text('7020210039')),
+                  DataCell(Text('B3')),
+                ]),
+                DataRow(cells: [
+                  DataCell(Text('-')),
+                  DataCell(Text('-')),
+                  DataCell(Text('-')),
+                ]),
+              ],
+            ),
+          ),
+        ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.pushNamed(context, '/page3');
-        },
-        child: Icon(Icons.arrow_forward),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }

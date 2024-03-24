@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'contoh penggunaan container, row, column',
+      title: 'row,column,container',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
