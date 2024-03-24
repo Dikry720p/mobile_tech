@@ -13,7 +13,7 @@ class Page3 extends StatelessWidget {
         children: [
           Container(
             width: 350,
-            height: 800,
+            height: 700,
             color: Colors.red,
             child: Center(
                 child: Text(
@@ -23,6 +23,13 @@ class Page3 extends StatelessWidget {
           )
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/page4');
+        },
+        child: Icon(Icons.arrow_forward),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
