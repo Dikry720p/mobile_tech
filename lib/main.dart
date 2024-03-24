@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Tugas pertemuan 3',
+      title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -22,49 +22,87 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('tugas pertemuan 3'),
+        title: Text('Flutter Widget Example'),
       ),
       body: Center(
         child: Container(
-          padding: EdgeInsets.all(16.0),
+          padding: EdgeInsets.all(20.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
+            children: <Widget>[
               Text(
-                'Ini adalah contoh aplikasi Flutter',
-                style: TextStyle(fontSize: 20.0),
+                'Column and Row Example',
+                style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               SizedBox(height: 20.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
+                children: <Widget>[
                   Container(
-                    width: 100,
-                    height: 100,
+                    width: 100.0,
+                    height: 100.0,
                     color: Colors.red,
-                    child: Center(child: Text('Box 1')),
+                    child: Center(
+                      child: Text(
+                        'Box 1',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
                   ),
                   Container(
-                    width: 100,
-                    height: 100,
+                    width: 100.0,
+                    height: 100.0,
                     color: Colors.green,
-                    child: Center(child: Text('Box 2')),
+                    child: Center(
+                      child: Text(
+                        'Box 2',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
                   ),
                   Container(
-                    width: 100,
-                    height: 100,
+                    width: 100.0,
+                    height: 100.0,
                     color: Colors.blue,
-                    child: Center(child: Text('Box 3')),
+                    child: Center(
+                      child: Text(
+                        'Box 3',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 20.0),
-              Container(
-                width: 200,
-                height: 200,
-                color: Colors.orange,
-                child: Center(child: Text('Container 1')),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.yellow,
+                    child: Center(
+                      child: Text(
+                        'Box 4',
+                        style: TextStyle(color: Colors.black),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: 100.0,
+                    height: 100.0,
+                    color: Colors.orange,
+                    child: Center(
+                      child: Text(
+                        'Box 5',
+                        style: TextStyle(color: Colors.black),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
