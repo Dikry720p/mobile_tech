@@ -42,7 +42,7 @@ class Page5 extends StatelessWidget {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            Navigator.pushNamed(context, '/page4');
+            Navigator.pushNamed(context, '/pert4');
           },
           child: Icon(Icons.arrow_forward),
         ),
