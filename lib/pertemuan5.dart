@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class Pert5 extends StatefulWidget {
   @override
-  _SMSMenuState createState() => _SMSMenuState();
+  _WAmenuState createState() => _WAmenuState();
 }
 
-class _SMSMenuState extends State<Pert5> {
+class _WAmenuState extends State<Pert5> {
   TextEditingController _controller = TextEditingController();
   List<String> _messages = [];
 
