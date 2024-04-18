@@ -7,6 +7,7 @@ import 'package:pert3/page3.dart';
 import 'package:pert3/page4.dart';
 import 'package:pert3/page5.dart';
 import 'package:pert3/pertemuan4.dart';
+import 'package:pert3/pertemuan5.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/page4': (context) => Page4(),
         '/page5': (context) => Page5(),
         '/pert4': (context) => Pert4(),
+        '/pert5': (context) => Pert5(),
       },
     );
   }
