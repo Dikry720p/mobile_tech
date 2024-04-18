@@ -1,13 +1,11 @@
-// ignore_for_file: unused_import
-
 import 'package:flutter/material.dart';
 import 'package:pert3/page1.dart';
 import 'package:pert3/page2.dart';
 import 'package:pert3/page3.dart';
 import 'package:pert3/page4.dart';
 import 'package:pert3/page5.dart';
-import 'package:pert3/pertemuan4.dart';
-import 'package:pert3/pertemuan5.dart';
+import 'package:pert3/pertemuan4.dart'; //SizeBox, WidgetFont
+import 'package:pert3/pertemuan5.dart'; //TextField
 
 void main() {
   runApp(MyApp());
@@ -17,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'row,column,container',
+      title: 'Matakuliah Mobile Technologi',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),

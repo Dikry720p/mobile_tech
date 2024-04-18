@@ -22,6 +22,7 @@ class _SMSMenuState extends State<Pert5> {
       appBar: AppBar(
         title: Text('Caritana whatsapp'),
       ),
+      backgroundColor: Colors.grey[200],
       body: Column(
         children: <Widget>[
           Expanded(
