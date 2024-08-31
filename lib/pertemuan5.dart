@@ -41,7 +41,7 @@ class _WAmenuState extends State<Pert5> {
             title: TextField(
               controller: _controller,
               decoration: InputDecoration(
-                hintText: 'Tulis pesanna',
+                hintText: 'input kode serial node',
                 border: InputBorder.none,
               ),
               onSubmitted: (value) {
